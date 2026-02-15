@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Simple Article Listing | devChallenges.io</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        /* height: 100vh; */
+        background-color: #F8FAFC;
+      }
+
+      header h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 2.25rem;
+        font-weight: 500;
+      }
+
+      .bar {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        text-align: center;
+        letter-spacing: 0.14rem;
+        font-size: 1.1rem;
+        color: #D9D9D9;
+      }
+
+      img {
+        width: 165px;
+        height: 165px;
+        border-radius: 16px;
+        margin-right: 4rem;
+        object-fit: cover;
+      }
+
+      .item-list {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 800px;
+        margin: 1.1rem;
+        flex-shrink: 10;
+      }
+
+      .item div {
+        margin-top: 1.5rem;
+        text-align: left;
+      }
+
+      section div h1 {
+        font-size: 1.35rem;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 1rem;
+        color: #000000;
+        font-weight: 400;
+      }
+
+      section div p {
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        color: #4D5562;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+        font-family: "Poppins", sans-serif;
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+
+
+
+      @media (max-width: 780px) {
+        header h1 {
+          font-weight: 600;
+          font-size: 2rem;
+          font-weight: 600;
+        }
+
+        .item-list {
+          gap: 0.1rem;
+        }
+        
+        .item img {
+          width: 100%;
+          max-width: 130px;
+          height: auto;      
+        }
+        
+        .item {
+          flex-direction: column;
+          width: 100%;
+          max-width: 350px;
+           gap: 0.5rem;
+
+        }
+
+        .item div {
+          margin-top: 1.25rem;
+          text-align: left;
+        }
+
+        section div h1 {
+          font-size: 1rem;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+        }
+
+        section div p {
+          font-size: 0.6rem;
+          font-family: "Poppins", sans-serif;
+          color: #4D5562;
+        }
+
+        .author-info {
+          font-size: 12px;
+          margin-top: 20px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        header h1 {
+          margin-top: 3rem;
+          margin-left: 5rem;
+          margin-right: 5rem;
+          margin-bottom: 3rem;
+        }
+
+        .bar {
+          margin-bottom: 2rem;
+          font-size: 1.5rem;
+          color: #D9D9D9;
+        }
+
+        .item-list {
+          margin-left: 7rem;
+          margin-right: 7rem;
+        }
+
+        section div h1 {
+          font-size: 1.4rem;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+        }
+
+        section div p {
+          font-size: 1rem;
+          font-weight: 500;
+          font-family: "Poppins", sans-serif;
+          color: #4D5562;
+        }
+
+        .author-info {
+          font-size: 14px;
+          text-align: center;
+          
+          /* margin-top: 100px; */
+          color: rgb(55, 65, 81);
+          font-family: "Poppins", sans-serif;
+        }
+      
+      }
+
+      @media (min-width: 1350px)  {
+        header h1 {
+          margin-left: 20rem;
+          margin-right: 20rem;
+        }
+          
+      }
+      
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <header>
+          <h1>We release interesting articles about technology</h1>
+        </header>
+        
+        <p class="bar">////////////////////</p>
+
+        <div class="item-list">
+          <section class="item">
+            <img src="resources/photo_1.png" alt="tower with bed">
+            <div>
+              <h1>Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions</h1>
+              <p>November 12, 2024</p>
+            </div>
+          </section>
+
+          <section class="item">
+            <img src="resources/photo_3.png" alt="cube">
+            <div>
+              <h1>The Future of AI: How Machine Learning is Revolutionizing Industries</h1>
+              <p>November 12, 2024</p>
+            </div>
+          </section>
+
+          <section class="item">
+            <img src="resources/photo_2.png" alt="glass cube">
+            <div>
+              <h1>The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work</h1>
+              <p>November 12, 2024</p>
+            </div>
+          </section>
+        </div>
+
+      </article>
+    </main>
+
+    <div class="author-info">
+      Coded by <a href="#">Victor C. Ricci</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
