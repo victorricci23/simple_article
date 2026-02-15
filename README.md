@@ -31,7 +31,7 @@
 <!-- OVERVIEW -->
 ## Overview
 
-![screenshot](https://media.discordapp.net/attachments/1464634656463786118/1472663134832562186/Screenshot_2026-02-15_153231.png?ex=699363ec&is=6992126c&hm=f8304d72c6cbe54060292881a35c540f42534f52f38306136afae953818172b9&=&format=webp&quality=lossless&width=638&height=666)
+![screenshot](thumbnail.jpg)
 
 <!--
   Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
