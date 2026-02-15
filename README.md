@@ -5,11 +5,11 @@
 </div>
 <div align="center">
   <h3>
-    <a href="https://your-demo-link-here.vercel.app">
+    <a href="https://victorricci23.github.io/simple_article/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/victorricci23/simple-article-listing">
+    <a href="https://victorricci23.github.io/simple_article/">
       Solution
     </a>
     <span> | </span>
@@ -79,5 +79,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Author
 
-- Website [your-website.com](https://{your-web-site-link})
 - GitHub [@victorricci23](https://github.com/victorricci23)
